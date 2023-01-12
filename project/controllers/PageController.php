@@ -4,13 +4,19 @@
 
     class PageController extends Controller
     {
-        public function show1()
+        private $pages;
+
+        public function __construct()
         {
-            echo '1';
+            $this->pages = [
+                1=>'page 1',
+                2=>'page 2',
+                3=>'page 3',
+            ];
         }
 
-        public function show2()
+        public function show($params)
         {
-            echo '2';
+            echo $this->pages[$params['id']];
         }
 	}
