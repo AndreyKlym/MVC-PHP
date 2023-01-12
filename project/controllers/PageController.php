@@ -1,22 +1,23 @@
 <?php
+//⊗ppOpUFmVw
 	namespace Project\Controllers;
 	use \Core\Controller;
 
     class PageController extends Controller
     {
-        private $pages;
-
-        public function __construct()
+//        task #1
+        public function act()
         {
-            $this->pages = [
-                1=>'page 1',
-                2=>'page 2',
-                3=>'page 3',
-            ];
+            return $this->render('page/act',[
+//            task #2
+//                'var1'=>'eee',
+//                'var2'=>'bbb',
+//                'var3'=>'kkk',
+
+//            task #3
+                'header'=>'users list',
+                'users'=>['user1', 'user2', 'user3'],
+            ]);
         }
 
-        public function show($params)
-        {
-            echo $this->pages[$params['id']];
-        }
 	}
