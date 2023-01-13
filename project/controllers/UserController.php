@@ -20,20 +20,20 @@ class UserController extends Controller
     }
 
     //task #3
-//        public function show($params)
-//        {
-//            $user = $this->users[$params['id']];
-//            echo $user['name'];
-//        }
+    //    public function show($params)
+    //    {
+    //        $user = $this->users[$params['id']];
+    //        echo $user['name'];
+    //    }
 
     //task #4
-//        public function info($params)
-//        {
-//            var_dump($params);
-//            $user = $this->users[$params['id']];
-//            $key=($params['key']);
-//            echo $user['name'] ."'s $key is ". $user[$key];
-//        }
+    //    public function info($params)
+    //    {
+    //        var_dump($params);
+    //        $user = $this->users[$params['id']];
+    //        $key=($params['key']);
+    //        echo $user['name'] ."'s $key is ". $user[$key];
+    //    }
 
     //task #5
     public function all()
