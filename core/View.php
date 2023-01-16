@@ -7,6 +7,7 @@
 			return $this->renderLayout($page, $this->renderView($page));
 		}
 		
+		// private function renderLayout(Page $page, $content, $title) {
 		private function renderLayout(Page $page, $content) {
 			$layoutPath = $_SERVER['DOCUMENT_ROOT'] . "/project/layouts/{$page->layout}.php";
 			

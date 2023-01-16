@@ -70,6 +70,8 @@ class ProductController extends Controller
     //task #4
     public function all()
     {
+        $this->title = "Action All controler Product";
+
         $prodArr = $this->products;
         // var_dump($prodArr);
         ?>

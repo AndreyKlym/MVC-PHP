@@ -1,23 +1,21 @@
 <?php
-//⊗ppOpUFmCAR
-//task #1
+//⊗ppOpUFmLy
+//task #2
 	namespace Project\Controllers;
 	use \Core\Controller;
 
     class TestController extends Controller
     {
-        public function act1()
+        public function act()
         {
-            echo '111';
+            $this->title = "Action Act controler Test";
+
+            return $this->render('test/act', [
+                'var1'=>'eee',
+                'var2'=>'ccc',
+                'var3'=>'qqq',
+            ]);
         }
 
-        public function act2()
-        {
-            echo '222';
-        }
 
-        public function act3()
-        {
-            echo '333';
-        }
 	}

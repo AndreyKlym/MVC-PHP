@@ -1,5 +1,5 @@
 <?php
-//⊗ppOpUFmVw
+//⊗ppOpUFmCVT
 
 	use \Core\Route;
 	
@@ -13,9 +13,16 @@
         // new Route('/product/', 'product', 'show'),
         // new Route('/product/:n/', 'product', 'show'),
 
-        //task #4
+        // task #4
         //http://name1/product/all/
         new Route('/product/all/', 'product', 'all'),
+
+
+        // http://name1/test/act/
+        new Route('/test/act/', 'test', 'act'),
+
+        // http://name1/page/show/1/
+        new Route('/page/show/:n/', 'page', 'show'),
 
 
 	];
